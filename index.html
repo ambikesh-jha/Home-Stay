@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Stay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Home Stay</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <h1>Welcome to Home Stay</h1>
+            <p>Your perfect vacation starts here.</p>
+            
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section id="about" class="content-section">
+        <h2>About Us</h2>
+        <p>We provide the best homestay experience for travelers and tourists. Enjoy the comfort of home with the luxury of a hotel.</p>
+    </section>
+
+    <section id="services" class="content-section">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <div class="service-image">
+                <img src="images/IMG-20240601-WA0110.jpg" alt="Luxury Rooms">
+            </div>
+            <div class="service-content">
+                <h3>Luxury Rooms</h3>
+                <p>Experience top-notch rooms with all the amenities you need.</p>
+            </div>
+        </div>
+        <div class="service-container">
+            <div class="service-image">
+                <img src="images/IMG-20240601-WA0110.jpg" alt="Local Tours">
+            </div>
+            <div class="service-content">
+                <h3>Local Tours</h3>
+                <p>Explore the local attractions with our guided tours.</p>
+            </div>
+        </div>
+        <div class="service-container">
+            <div class="service-image">
+                <img src="images/IMG-20240601-WA0110.jpg" alt="24/7 Support">
+            </div>
+            <div class="service-content">
+                <h3>24/7 Support</h3>
+                <p>We are here to help you anytime during your stay.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="gallery" class="content-section">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="images/photo.jpg" alt="Description 1">
+                <p class="gallery-description">Beautiful view from the balcony.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/photo.jpg" alt="Description 2">
+                <p class="gallery-description">Spacious and comfortable rooms.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/photo.jpg" alt="Description 3">
+                <p class="gallery-description">Relaxing lounge area.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/photo.jpg" alt="Description 4">
+                <p class="gallery-description">Modern and fully equipped kitchen.</p>
+            </div>
+            <div class="gallery-item hidden">
+                <img src="images/photo.jpg" alt="Description 5">
+                <p class="gallery-description">Luxury dining area.</p>
+            </div>
+            <div class="gallery-item hidden">
+                <img src="images/photo.jpg" alt="Description 6">
+                <p class="gallery-description">Cozy reading nook.</p>
+            </div>
+            <div class="gallery-item hidden">
+                <img src="images/photo.jpg" alt="Description 7">
+                <p class="gallery-description">Elegant bathroom design.</p>
+            </div>
+            <div class="gallery-item hidden">
+                <img src="images/photo.jpg" alt="Description 8">
+                <p class="gallery-description">Outdoor pool with a view.</p>
+            </div>
+            <div class="gallery-item hidden">
+                <img src="images/photo.jpg" alt="Description 9">
+                <p class="gallery-description">Bright and airy living room.</p>
+            </div>
+            <div class="gallery-item hidden">
+                <img src="images/photo.jpg" alt="Description 10">
+                <p class="gallery-description">Beautiful garden area.</p>
+            </div>
+        </div>
+        <button id="view-more" class="btn">View More Images</button>
+        <button id="view-less" class="btn hidden">View Less Images</button>
+    </section>
+       
+    
+    <section id="contact" class="content-section">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Home Stay.Made By Ambikesh Jha.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
