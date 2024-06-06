@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Stay</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
+    
 <body>
+    <!-- Navigation bar -->
     <header>
         <nav>
             <div class="logo">Home Stay</div>
@@ -24,23 +27,69 @@
             </div>
         </nav>
     </header>
+    <!-- Navigation bar -->
 
+    <!-- Home section -->
     <section id="home">
         <div class="hero">
+            
             <h1>Welcome to Home Stay</h1>
             <p>Your perfect vacation starts here.</p>
-            
+            <div class="social-media-icons">
+                <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://maps.google.com" target="_blank" class="social-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </a>
+            </div>
             <a href="#about" class="btn">Learn More</a>
         </div>
     </section>
+    <!-- Home section ends-->
 
+    <!-- About section -->
     <section id="about" class="content-section">
-        <h2>About Us</h2>
-        <p>We provide the best homestay experience for travelers and tourists. Enjoy the comfort of home with the luxury of a hotel.</p>
+            <h2 class="titletext"><span>A</span>bout <span>U</span>s</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Welcome to Home Stay</h3>
+                <p>
+                    Nestled in the heart of serene landscapes, Home Stay offers a perfect blend of comfort and luxury. Our mission is to provide a home away from home, where guests can relax, unwind, and enjoy the beauty of nature.
+                </p>
+                <h3>Our Mission</h3>
+                <p>
+                    At Home Stay, our mission is to create an unforgettable experience for our guests by offering exceptional hospitality and personalized service. We strive to make every stay special by ensuring our guests feel welcomed and valued.
+                </p>
+                <h3>Why Choose Us?</h3>
+                <ul>
+                    <li>Beautifully furnished rooms with modern amenities</li>
+                    <li>Scenic views from every room</li>
+                    <li>Delicious homemade meals prepared with fresh ingredients</li>
+                    <li>Friendly and attentive staff</li>
+                    <li>Convenient location near popular attractions</li>
+                    <li>Activities and excursions tailored to your interests</li>
+                </ul>
+                <p>
+                    Whether you are looking for a peaceful retreat or an adventurous getaway, Home Stay is the perfect choice. We look forward to hosting you and making your stay truly memorable.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="images/IMG-20240601-WA0110.jpg" alt="Home Stay Image">
+            </div>
+        </div>
     </section>
+    <!--About section End-->
 
+    <!-- Our-services section -->
     <section id="services" class="content-section">
-        <h2>Our Services</h2>
+            <h2 class="titletext"><span>O</span>ur <span>S</span>ervices</h2>
         <div class="service-container">
             <div class="service-image">
                 <img src="images/IMG-20240601-WA0110.jpg" alt="Luxury Rooms">
@@ -69,72 +118,66 @@
             </div>
         </div>
     </section>
+    <!-- Our-services section ends-->
     
+    <!-- gallery section -->
     <section id="gallery" class="content-section">
-        <h2>Gallery</h2>
-        <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="images/photo.jpg" alt="Description 1">
-                <p class="gallery-description">Beautiful view from the balcony.</p>
+            <h2 class="titletext"><span>G</span>allery</h2>
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <!-- Carousel items by JavaScript here-->
             </div>
-            <div class="gallery-item">
-                <img src="images/photo.jpg" alt="Description 2">
-                <p class="gallery-description">Spacious and comfortable rooms.</p>
-            </div>
-            <div class="gallery-item">
-                <img src="images/photo.jpg" alt="Description 3">
-                <p class="gallery-description">Relaxing lounge area.</p>
-            </div>
-            <div class="gallery-item">
-                <img src="images/photo.jpg" alt="Description 4">
-                <p class="gallery-description">Modern and fully equipped kitchen.</p>
-            </div>
-            <div class="gallery-item hidden">
-                <img src="images/photo.jpg" alt="Description 5">
-                <p class="gallery-description">Luxury dining area.</p>
-            </div>
-            <div class="gallery-item hidden">
-                <img src="images/photo.jpg" alt="Description 6">
-                <p class="gallery-description">Cozy reading nook.</p>
-            </div>
-            <div class="gallery-item hidden">
-                <img src="images/photo.jpg" alt="Description 7">
-                <p class="gallery-description">Elegant bathroom design.</p>
-            </div>
-            <div class="gallery-item hidden">
-                <img src="images/photo.jpg" alt="Description 8">
-                <p class="gallery-description">Outdoor pool with a view.</p>
-            </div>
-            <div class="gallery-item hidden">
-                <img src="images/photo.jpg" alt="Description 9">
-                <p class="gallery-description">Bright and airy living room.</p>
-            </div>
-            <div class="gallery-item hidden">
-                <img src="images/photo.jpg" alt="Description 10">
-                <p class="gallery-description">Beautiful garden area.</p>
-            </div>
+            <button class="prev">&laquo;</button>
+            <button class="next">&raquo;</button>
         </div>
-        <button id="view-more" class="btn">View More Images</button>
-        <button id="view-less" class="btn hidden">View Less Images</button>
-    </section>
-       
-    
-    <section id="contact" class="content-section">
-        <h2>Contact Us</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit" class="btn">Send</button>
-        </form>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Home Stay.Made By Ambikesh Jha.</p>
-    </footer>
+    <!--viewing full image -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+    </div>
+    <!-- gallery section ends-->
+    
+    <!--Contact section Start-->
+    <section class="contact" id="contact">
+        <div class="title">
+            <h2 class="titletext"><span>C</span>ontact <span>U</span>s</h2>
+            <p>Book your stay with us for a relaxing and memorable experience. Contact us for reservations or inquiries. We look forward to welcoming you!</p>
+        </div>
+
+        <div class="contactForm">
+            <h3>Send Message</h3>
+        
+            <form action="https://formspree.io/f/xayrdzek" method="post">
+                <div class="inputBox">
+                    <input type="text" name="username" placeholder="Name" required>
+                </div>
+                <div class="inputBox">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="inputBox">
+                    <textarea name="message" placeholder="Message" required></textarea>
+                </div>
+                <div class="inputBox">
+                    <input type="submit" value="Send">
+                </div>
+            </form>
+        </div>
+    </section>
+    <!--Contact section End-->
+
+
+    <!--Footer section Start-->
+    <div class="copyrightText">
+        <p>Made by <a href="#">ambikesh-jha</a>. All Right Reserved &copy; 2024</p>
+        <div class="footer-icons">
+            <a target="_" href="https://github.com/ambikesh-jha"><i class="fab fa-github"></i></a>
+            <a target="_" href="https://www.linkedin.com/in/ambikesh-jha"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+    <!--Footer section End-->
 
     <script src="script.js"></script>
 </body>
